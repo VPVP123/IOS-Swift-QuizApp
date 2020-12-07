@@ -24,7 +24,7 @@ class ResultView: UIView {
     }
     
     private func setupView(){
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.adjustsFontForContentSizeCategory = true
         titleLabel.text = "Your Result"
