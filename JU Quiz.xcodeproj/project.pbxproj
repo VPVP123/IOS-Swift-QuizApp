@@ -15,6 +15,7 @@
 		69226382257BC5D6007F059A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69226381257BC5D6007F059A /* ResultView.swift */; };
 		69226387257BCE66007F059A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69226386257BCE66007F059A /* Question.swift */; };
 		6922638C257BD0FD007F059A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922638B257BD0FD007F059A /* StartViewController.swift */; };
+		693D2C3E257FD00300E69FB2 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D2C3D257FD00300E69FB2 /* StarterView.swift */; };
 		698CA88B2553E08C004732FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CA88A2553E08C004732FE /* AppDelegate.swift */; };
 		698CA88D2553E08C004732FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CA88C2553E08C004732FE /* SceneDelegate.swift */; };
 		698CA8922553E08C004732FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698CA8902553E08C004732FE /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		69226381257BC5D6007F059A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		69226386257BCE66007F059A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		6922638B257BD0FD007F059A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		693D2C3D257FD00300E69FB2 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		698CA8872553E08C004732FE /* JU Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JU Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698CA88A2553E08C004732FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698CA88C2553E08C004732FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				698CA88A2553E08C004732FE /* AppDelegate.swift */,
 				698CA88C2553E08C004732FE /* SceneDelegate.swift */,
 				698CA8902553E08C004732FE /* Main.storyboard */,
+				693D2C3D257FD00300E69FB2 /* StarterView.swift */,
 				698CA8962553E08E004732FE /* Assets.xcassets */,
 				698CA8982553E08E004732FE /* LaunchScreen.storyboard */,
 				698CA89B2553E08E004732FE /* Info.plist */,
@@ -287,6 +290,7 @@
 			files = (
 				6922637D257BC4BE007F059A /* ResultViewController.swift in Sources */,
 				6922638C257BD0FD007F059A /* StartViewController.swift in Sources */,
+				693D2C3E257FD00300E69FB2 /* StarterView.swift in Sources */,
 				698CA88B2553E08C004732FE /* AppDelegate.swift in Sources */,
 				698CA88D2553E08C004732FE /* SceneDelegate.swift in Sources */,
 				698CA8CA2553EEE9004732FE /* QuestionViewController.swift in Sources */,
