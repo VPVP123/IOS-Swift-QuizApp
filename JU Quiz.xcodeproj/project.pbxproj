@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		691C5379257E888D006B8495 /* QuestionsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C5378257E888D006B8495 /* QuestionsResult.swift */; };
-		691C53B1257E91EA006B8495 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C53AF257E91EA006B8495 /* GameResult+CoreDataClass.swift */; };
-		691C53B2257E91EA006B8495 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C53B0257E91EA006B8495 /* GameResult+CoreDataProperties.swift */; };
 		691C53B7257E9618006B8495 /* highScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C53B6257E9618006B8495 /* highScoreTableViewController.swift */; };
 		6922637D257BC4BE007F059A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6922637C257BC4BE007F059A /* ResultViewController.swift */; };
 		69226382257BC5D6007F059A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69226381257BC5D6007F059A /* ResultView.swift */; };
@@ -25,6 +23,8 @@
 		698CA8A52553E08E004732FE /* JU_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CA8A42553E08E004732FE /* JU_QuizTests.swift */; };
 		698CA8B02553E08E004732FE /* JU_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CA8AF2553E08E004732FE /* JU_QuizUITests.swift */; };
 		698CA8CA2553EEE9004732FE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CA8C92553EEE9004732FE /* QuestionViewController.swift */; };
+		699509892580B2F000608281 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699509872580B2F000608281 /* GameResult+CoreDataClass.swift */; };
+		6995098A2580B2F000608281 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699509882580B2F000608281 /* GameResult+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,6 @@
 
 /* Begin PBXFileReference section */
 		691C5378257E888D006B8495 /* QuestionsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResult.swift; sourceTree = "<group>"; };
-		691C53AF257E91EA006B8495 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
-		691C53B0257E91EA006B8495 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		691C53B6257E9618006B8495 /* highScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highScoreTableViewController.swift; sourceTree = "<group>"; };
 		6922637C257BC4BE007F059A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		69226381257BC5D6007F059A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 		698CA8AF2553E08E004732FE /* JU_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JU_QuizUITests.swift; sourceTree = "<group>"; };
 		698CA8B12553E08E004732FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		698CA8C92553EEE9004732FE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		699509872580B2F000608281 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		699509882580B2F000608281 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +119,8 @@
 		698CA8892553E08C004732FE /* JU Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				691C53AF257E91EA006B8495 /* GameResult+CoreDataClass.swift */,
-				691C53B0257E91EA006B8495 /* GameResult+CoreDataProperties.swift */,
+				699509872580B2F000608281 /* GameResult+CoreDataClass.swift */,
+				699509882580B2F000608281 /* GameResult+CoreDataProperties.swift */,
 				698CA88A2553E08C004732FE /* AppDelegate.swift */,
 				698CA88C2553E08C004732FE /* SceneDelegate.swift */,
 				698CA8902553E08C004732FE /* Main.storyboard */,
@@ -294,13 +294,13 @@
 				698CA88B2553E08C004732FE /* AppDelegate.swift in Sources */,
 				698CA88D2553E08C004732FE /* SceneDelegate.swift in Sources */,
 				698CA8CA2553EEE9004732FE /* QuestionViewController.swift in Sources */,
+				699509892580B2F000608281 /* GameResult+CoreDataClass.swift in Sources */,
 				698CA8952553E08C004732FE /* JU_Quiz.xcdatamodeld in Sources */,
-				691C53B1257E91EA006B8495 /* GameResult+CoreDataClass.swift in Sources */,
+				6995098A2580B2F000608281 /* GameResult+CoreDataProperties.swift in Sources */,
 				691C5379257E888D006B8495 /* QuestionsResult.swift in Sources */,
 				691C53B7257E9618006B8495 /* highScoreTableViewController.swift in Sources */,
 				69226387257BCE66007F059A /* Question.swift in Sources */,
 				69226382257BC5D6007F059A /* ResultView.swift in Sources */,
-				691C53B2257E91EA006B8495 /* GameResult+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

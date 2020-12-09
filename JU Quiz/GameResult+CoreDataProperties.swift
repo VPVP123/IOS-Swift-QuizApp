@@ -2,7 +2,7 @@
 //  GameResult+CoreDataProperties.swift
 //  JU Quiz
 //
-//  Created by Victor Svanqvist on 2020-12-07.
+//  Created by Victor Svanqvist on 2020-12-09.
 //
 //
 
@@ -16,9 +16,10 @@ extension GameResult {
         return NSFetchRequest<GameResult>(entityName: "GameResult")
     }
 
+    @NSManaged public var date: Date?
     @NSManaged public var numberOfQuestions: Int32
     @NSManaged public var rightAnswers: Int32
-    @NSManaged public var date: Date?
+    @NSManaged public var difficulty: String?
 
 }
 

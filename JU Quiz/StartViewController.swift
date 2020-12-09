@@ -73,6 +73,7 @@ class StartViewController: UIViewController {
         if let questionViewController = segue.destination as? QuestionViewController{
             questionViewController.numberOfQuestions = numberOfQuestionss
             questionViewController.questions = questions
+            questionViewController.difficulty = difficulty
         }
     }
 
@@ -95,7 +96,6 @@ extension StartViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
         
-        print(pickerData[row])
         if(pickerView == roundScroller){
             return String(pickerData[row])
         }

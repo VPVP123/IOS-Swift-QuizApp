@@ -25,6 +25,7 @@ class QuestionViewController: UIViewController {
     var question: Question?
     var numberOfQuestions = 0
     var rightAnswers = 0
+    var difficulty = "easy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,6 +139,7 @@ class QuestionViewController: UIViewController {
         questionViewController.numberOfQuestions = numberOfQuestions
         questionViewController.rightAnswers = rightAnswers
         questionViewController.questions = questions
+        questionViewController.difficulty = difficulty
         navigationController?.pushViewController(questionViewController, animated: true)
     }
     
@@ -149,6 +151,7 @@ class QuestionViewController: UIViewController {
             gameResult.numberOfQuestions = Int32(numberOfQuestions)
             gameResult.rightAnswers = Int32(rightAnswers)
             gameResult.date = Date()
+            gameResult.difficulty = difficulty
             appDelegate.saveContext()
         }
     }

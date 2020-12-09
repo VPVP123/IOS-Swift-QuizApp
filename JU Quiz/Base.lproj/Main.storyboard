@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,34 +35,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-H5-Z6e">
-                                <rect key="frame" x="190" y="433" width="34" height="30"/>
-                                <state key="normal" title="Start"/>
+                                <rect key="frame" x="190" y="283" width="34" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="bK4-iP-TD6" kind="show" id="c9X-7G-I3I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-zy-WIj">
                                 <rect key="frame" x="186" y="832" width="42" height="30"/>
-                                <state key="normal" title="About"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="qe6-hP-oSq" kind="show" id="FQ3-Ek-TFu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-qx-xS8">
-                                <rect key="frame" x="169" y="483" width="76" height="30"/>
-                                <state key="normal" title="High Score"/>
+                                <rect key="frame" x="169" y="333" width="76" height="30"/>
+                                <state key="normal" title="High Score">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="highScoreButton:" destination="0mo-FR-qJN" eventType="touchUpInside" id="UkG-lo-pTf"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KE1-AH-ZSK">
-                                <rect key="frame" x="47" y="583" width="320" height="100"/>
+                                <rect key="frame" x="47" y="433" width="320" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="JJp-75-HyC"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounds:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsX-Gn-fPk">
-                                <rect key="frame" x="175.5" y="513" width="63" height="100"/>
+                                <rect key="frame" x="175.5" y="363" width="63" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fmI-dj-ErL"/>
                                 </constraints>
@@ -70,20 +77,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAu-0b-WCo">
-                                <rect key="frame" x="47" y="713" width="320" height="70"/>
+                                <rect key="frame" x="47" y="563" width="320" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="loG-FH-Bxi"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDA-ZP-hka">
-                                <rect key="frame" x="173" y="683" width="68" height="21"/>
+                                <rect key="frame" x="173" y="533" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P9r-wV-29d"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dcj-zy-WIj" firstAttribute="bottom" secondItem="P9r-wV-29d" secondAttribute="bottom" id="37v-PF-Eac"/>
@@ -95,7 +102,7 @@
                             <constraint firstItem="NsX-Gn-fPk" firstAttribute="top" secondItem="kNY-qx-xS8" secondAttribute="top" constant="30" id="b8M-2N-HTY"/>
                             <constraint firstItem="dcj-zy-WIj" firstAttribute="centerX" secondItem="OAu-0b-WCo" secondAttribute="centerX" id="d10-ti-T4H"/>
                             <constraint firstItem="kNY-qx-xS8" firstAttribute="top" secondItem="FVA-H5-Z6e" secondAttribute="top" constant="50" id="jbA-Np-4aj"/>
-                            <constraint firstItem="FVA-H5-Z6e" firstAttribute="centerY" secondItem="fWJ-uT-kRI" secondAttribute="centerY" id="moV-wS-AfU"/>
+                            <constraint firstItem="FVA-H5-Z6e" firstAttribute="centerY" secondItem="fWJ-uT-kRI" secondAttribute="centerY" constant="-150" id="moV-wS-AfU"/>
                             <constraint firstItem="KE1-AH-ZSK" firstAttribute="centerX" secondItem="kNY-qx-xS8" secondAttribute="centerX" id="qrY-sE-RFN"/>
                             <constraint firstItem="NsX-Gn-fPk" firstAttribute="centerX" secondItem="kNY-qx-xS8" secondAttribute="centerX" id="tL0-4o-joJ"/>
                             <constraint firstItem="pDA-ZP-hka" firstAttribute="top" secondItem="KE1-AH-ZSK" secondAttribute="top" constant="100" id="uBf-xA-NGk"/>
@@ -172,7 +179,7 @@ This is my app :)</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGT-Zh-OxZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="367"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -185,7 +192,7 @@ This is my app :)</string>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KBM-Ac-1Ga">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="173.5"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Good"/>
@@ -195,7 +202,7 @@ This is my app :)</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JLp-R2-FqK">
                                                         <rect key="frame" x="197" y="0.0" width="177" height="173.5"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Okay"/>
@@ -210,7 +217,7 @@ This is my app :)</string>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Kph-mT-Jhk">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="173.5"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Bad"/>
@@ -220,7 +227,7 @@ This is my app :)</string>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-nI-stn">
                                                         <rect key="frame" x="197" y="0.0" width="177" height="173.5"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="ẖ̶̨̈́̍͗̓̕e̵̛̛̠͎̻͓̬̓̉͛̀̈́̀͆̕̕ļ̸̜͕̘͕͖̖̟̗̱͈̿̿̔͜ͅṕ̸̡̧̦̞̦̼͎͔̺̦̞̫̈́̈͜͜͠ͅ"/>
@@ -276,20 +283,23 @@ This is my app :)</string>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

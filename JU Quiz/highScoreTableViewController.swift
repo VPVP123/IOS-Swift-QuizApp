@@ -61,7 +61,7 @@ class highScoreTableViewController: UITableViewController {
         let fortmatter = DateFormatter()
         fortmatter.dateStyle = .short
         
-        cell.textLabel?.text = "\(fortmatter.string(from: gameResult.date!)): Out of \(gameResult.rightAnswers) you answered \(gameResult.numberOfQuestions) right"
+        cell.textLabel?.text = "\(fortmatter.string(from: gameResult.date!)): \(gameResult.rightAnswers)/\(gameResult.numberOfQuestions) Difficulty:() \(String(gameResult.difficulty ?? "easy"))"
 
         return cell
     }
